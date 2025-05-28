@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Theresults">
+
+    <Button
+        android:id="@+id/reviewbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="78dp"
+        android:layout_marginTop="39dp"
+        android:text="Review It"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/therest" />
+
+    <TextView
+        android:id="@+id/myfeedback"
+        android:layout_width="361dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="42dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reviewbutton" />
+
+    <Button
+        android:id="@+id/leavebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="39dp"
+        android:text="Leave"
+        app:layout_constraintStart_toEndOf="@+id/reviewbutton"
+        app:layout_constraintTop_toBottomOf="@+id/therest" />
+
+    <TextView
+        android:id="@+id/myscore"
+        android:layout_width="288dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="37dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/therest"
+        android:layout_width="311dp"
+        android:layout_height="131dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="58dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myscore" />
+</androidx.constraintlayout.widget.ConstraintLayout>
